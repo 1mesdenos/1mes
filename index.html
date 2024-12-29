@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon-32x32.png" type="png" />
+    <title>1 Mês de Nós</title>
+    <style>
+      body {
+        font-family: "Verdana", sans-serif;
+        background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+        margin: 0;
+        padding: 0;
+        color: #000000;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(to right, #e77171, #ff9999);
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        font-size: 2.8em;
+        margin: 0;
+        font-family: "Georgia", serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .section {
+        margin-bottom: 30px;
+      }
+      .section h2 {
+        text-align: center;
+        color: #ff4d4d;
+        border-bottom: 2px solid #ff4d4d;
+        padding-bottom: 5px;
+        font-family: "Georgia", serif;
+      }
+      .list {
+        list-style: none;
+        padding: 0;
+      }
+      .list li {
+        text-align: center;
+        margin: 10px 0;
+        padding: 10px;
+        background: #ffe6e6;
+        border-radius: 8px;
+        font-size: 1.1em;
+      }
+      .heart {
+        text-align: center;
+        font-size: 2em;
+        color: #ff4d4d;
+        margin: 20px 0;
+      }
+      .counter {
+        text-align: center;
+        font-family: cursive;
+        margin-top: 16px;
+        font-size: 1.5em;
+        color: #675252;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px;
+        background: linear-gradient(to right, #ff7f7f, #ff9999);
+        color: white;
+        font-size: 1em;
+      }
+    </style>
+    <script>
+      function updateCounter() {
+        const startDate = new Date("2024-12-01"); // Data inicial do relacionamento
+        const today = new Date();
+        const differenceInTime = today - startDate;
+        const daysTogether = Math.floor(
+          differenceInTime / (1000 * 60 * 60 * 24)
+        );
+        document.getElementById(
+          "days-counter"
+        ).innerText = `Estamos juntos há ${daysTogether} dias!`;
+      }
+      window.onload = updateCounter;
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>1 Mês de Nós Dois</h1>
+    </header>
+
+    <div class="counter" id="days-counter"></div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Uma Mensagem Especial</h2>
+        <p>
+          Oi, meu bem! Decidi criar esse site em forma de presentinho para você,
+          espero que goste!<br />
+          Hoje completamos 1 mês juntos, e eu só quero te lembrar o quanto você
+          é especial para mim; o quanto você tem me feito feliz. Você transforma
+          qualquer dia simples em algo especial, e eu sou muito grato por ter
+          você na minha vida. <br />
+          Este é apenas o começo da nossa história, e eu estou muito empolgado
+          para continuar escrevendo ela com você. <br />
+          Obrigado por transformar cada dia em algo incrível. 💕
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>O Que Admiro em Você</h2>
+        <ul class="list">
+          <li>Seu sorriso que ilumina tudo.</li>
+          <li>Seus olhos.</li>
+          <li>Como você faz qualquer momento simples se tornar mágico.</li>
+          <li>A sua paciência e carinho comigo.</li>
+          <li>Seu senso de humor que sempre me faz rir.</li>
+          <li>Sua determinação e força em enfrentar desafios.</li>
+          <li>Sua criatividade que me surpreende sempre.</li>
+          Existem diversas coisas que admiro em você, mas não caberia nesta
+          lista.
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Alguns dos Nossos Planos Futuros</h2>
+        <ul class="list">
+          <li>Assistir ao pôr do sol juntos em um lugar especial.</li>
+          <li>Planejar uma viagem para explorar algo novo.</li>
+          <li>Fazer um piquenique só nós dois.</li>
+          <li>Cozinhar juntos.</li>
+          <li>Registrar momentos especiais em fotos para relembrar.</li>
+          <li>Aprender algo novo juntos.</li>
+          <li>
+            Explorar restaurantes diferentes e experimentar novas culinárias.
+          </li>
+          <li>Celebrar nossos aniversários de namoro de formas criativas.</li>
+        </ul>
+      </div>
+      <div class="section heart">❤️ Você é o meu maior presente. ❤️</div>
+    </div>
+
+    <footer>Feito com carinho por Ronald, o brabo</footer>
+  </body>
+</html>
